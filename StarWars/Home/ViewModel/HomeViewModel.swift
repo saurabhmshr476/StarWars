@@ -20,7 +20,7 @@ class HomeViewModel {
             networkManager.getPeople {[weak self] (peopleData, err) in
                 
                 if let err = err {
-                    print("Failed to fetch courses:", err)
+                    print("Failed to fetch:", err)
                     self?.progress.value = false
 
                     return
