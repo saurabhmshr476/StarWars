@@ -19,7 +19,7 @@ enum Resource: String {
 
 enum URLBuilder{
     static let baseUrl = "https://swapi.dev/api"
-    static func buildUrl(for resource: Resource, withId id: Int? = nil) -> URL? {
+    static func buildUrl(for resource: Resource) -> URL? {
       let urlString = baseUrl + "/\(resource.rawValue)"
       return URL(string: urlString)
     }
